@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+nav {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.tag {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.desc {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+section {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+button {
+  padding: 12px 25px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
