@@ -27,10 +27,10 @@ def home():
 
 @app.route("/contact", methods=["POST"])
 def contact():
-    data = request.json
-    name = data.get("name")
-    email = data.get("email")
-    message = data.get("message")
+name = request.form.get("name")
+email = request.form.get("email")
+message = request.form.get("message") 
+)
 
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
