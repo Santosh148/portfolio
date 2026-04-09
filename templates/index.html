@@ -1,70 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Santosh Kumar</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Santosh Kumar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
 <nav>
-  <h2>Santosh</h2>
+    <h2>Santosh</h2>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Santosh Kumar 🚀</h1>
-  <p class="tag">Developer | Entrepreneur | Social Worker</p>
+    <h1>Santosh Kumar 🚀</h1>
+    <p>Developer | Entrepreneur | Social Worker</p>
 
-  <p class="desc">
-    Building real-world tech solutions while working in an Event Management Startup 
-    and actively serving society through JAY JAGANNATH YUVA FOUNDATION.
-  </p>
-
-  <button onclick="scrollContact()">Contact Me</button>
+    <p>
+        Building real-world tech solutions while working in an Event Management Startup
+        and actively serving society through JAY JAGANNATH YUVA FOUNDATION.
+    </p>
 </section>
+
+<!-- CONTACT FORM (IMPORTANT) -->
+<h2>Contact Me</h2>
+
+<form action="/contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+    <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+</form>
 
 <!-- ABOUT -->
 <section class="about">
-  <h2>About Me</h2>
-  <p>
-    I am a BTech student with strong skills in Java, Python, C, and AI. 
-    I focus on building practical and real-world solutions.
-  </p>
-
-  <p>
-    Currently, I am working with an Event Management Startup, gaining real business experience 
-    and understanding how systems work in the market.
-  </p>
-
-  <p>
-    I am also the Founder of JAY JAGANNATH YUVA FOUNDATION, where I actively contribute 
-    to social service and help people in need.
-  </p>
+    <h2>About Me</h2>
+    <p>
+        I am a BTech student with strong skills in Java, Python, C, and AI.
+        I focus on building practical and real-world solutions.
+    </p>
 </section>
 
-<!-- VISION -->
-<section class="vision">
-  <h2>My Vision</h2>
-  <p>
-    To become a successful entrepreneur by combining technology, business, and social impact.
-    I believe in building systems that generate value and create real change.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact Me</h2>
-  <p>Let's connect and build something impactful.</p>
-
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
-
